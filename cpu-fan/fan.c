@@ -16,6 +16,7 @@ float getTemp()
             exit(1);
     }
     fgets(strTemp, 10, fp);
+    fclose(fp);
     intTemp = atoi(strTemp);
     return intTemp / 1000.0;
 }
